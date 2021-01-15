@@ -16,15 +16,8 @@ key= get_key()
 text=msg.encode()
 a= Fernet(key)
 encrypted_msg= a.encrypt(text)
-print(encrypted_msg)
+print(encrypted_msg,)
 
-# else:
-#     msg=input("Enter the message you want to DECRYPT : ")
-    
-#     key= get_key()
-#     b= Fernet(key)
-#     decoded_msg= b.decrypt(msg.encode())
-#     print(decoded_msg)
-
-
- 
+#Decryption
+# decoded_text = a.decrypt(encrypted_msg)
+# print(decoded_text)
